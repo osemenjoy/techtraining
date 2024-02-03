@@ -1,0 +1,58 @@
+Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web.HTTP is a protocol that enables the exchange of information between clients (such as web browsers) and servers. It operates over the application layer of the Internet Protocol Suite, typically using TCP (Transmission Control Protocol) as the transport protocol. It defines the rules for how messages are formatted and transmitted between web browsers, servers, and other components of the internet. HTTP is an application layer protocol in the Internet Protocol Suite, operating on top of the Transport Control Protocol (TCP) or other transport protocols. Communication in HTTP follows a request-response model. A client sends an HTTP request to a server, and the server responds with the requested information or an error message.
+
+HTTP Methods:
+HTTP defines several methods that indicate the desired action to be performed on a resource. Common methods include; 
+  - GET (retrieve information)
+  - POST (submit data)
+  - PUT (update a resource)
+  - DELETE (remove a resource).
+
+Status Codes:
+   - HTTP responses include status codes indicating the outcome of the request. Common status codes include 200 (OK), 404 (Not Found), 500 (Internal Server Error), providing information about the success or failure of the request.
+HTTP status codes indicate the outcome of a client's request to a server. Here's a list of some common HTTP status codes along with their meanings:
+
+1. Informational:
+- 100 Continue: The server has received the initial part of the request, and the client should proceed with the remainder.
+
+2. Success:
+- 200 OK: The request was successful, and the server has returned the requested data.
+- 201 Created: The request has been fulfilled, and a new resource has been created as a result.
+- 204 No Content: The server successfully processed the request but does not need to return any content.
+
+3. Redirection:
+- 301 Moved Permanently: The requested resource has been permanently moved to a new location, and future requests should use the new URL.
+- 302 Found (or 303 See Other): The requested resource has been temporarily moved to another location. The client should continue to use the original URL or follow the redirect.
+- 304 Not Modified: The requested resource has not been modified since the last request, and there is no need to retransmit the resource.
+
+4. Client Errors:
+- 400 Bad Request: The server could not understand the request due to invalid syntax or other client-side errors.
+- 401 Unauthorized: Authentication is required, and the client needs to provide valid credentials.
+- 403 Forbidden: The client does not have permission to access the requested resource.
+- 404 Not Found: The requested resource could not be found on the server.
+- 405 Method Not Allowed: The request method (GET, POST, etc.) is not allowed for the requested resource.
+
+5. Server Errors:
+- 500 Internal Server Error: A generic error message indicating that an unexpected condition was encountered on the server.
+- 501 Not Implemented: The server does not support the functionality required to fulfill the request.
+- 503 Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance of the server.
+- 504 Gateway Timeout: The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server or some other auxiliary server.
+
+Here are some other key aspects to note about http;
+
+1. Uniform Resource Identifiers (URIs):
+   - Resources on the web, such as web pages or files, are identified by Uniform Resource Identifiers (URIs). URLs (Uniform Resource Locators) are a common type of URI used to locate resources on the web.
+
+2. Headers:
+   - HTTP requests and responses include headers, which contain additional information about the message. Headers can convey details like content type, authentication credentials, and caching instructions.
+
+3. Statelessness:
+   - HTTP is stateless, meaning each request from a client to a server is independent. The server does not retain information about previous requests, enhancing simplicity and scalability.
+
+4. Cookies and Sessions:
+   - To maintain stateful interactions, cookies are often used to store small pieces of data on the client's side. Sessions can be established to retain information across multiple HTTP requests, allowing for personalized and dynamic web experiences.
+
+5. Secure Version (HTTPS):
+   - HTTPS (Hypertext Transfer Protocol Secure) is a secure version of HTTP that uses encryption (typically SSL/TLS) to secure the data transmitted between the client and the server. It is commonly used for sensitive transactions, such as online banking or shopping.
+
+6. Caching:
+    - HTTP supports caching mechanisms to optimize performance. By caching resources, browsers can avoid re-downloading them if they haven't changed, reducing latency and bandwidth usage.
